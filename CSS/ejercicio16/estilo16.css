@@ -1,0 +1,28 @@
+#cabIzq {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
+#cabDer {
+    float: right;
+    width: 50%;
+}
+
+#cuerpoIzq {
+    float: left;
+    width: 500;
+}
+
+body {
+    background-color: beige;
+}
+
+#cuerpoDer {
+    float: right;
+    width: 500;
+}
+
+#footer {
+    width: 100%;
+}

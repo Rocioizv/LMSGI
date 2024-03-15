@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="curriculum" type="T_CV">
+
+    </xs:element>
+    <xs:complexType name="T_CV">
+        <xs:sequence>
+            <xs:element name="datosPersonales" type="T_datosP" />
+            <xs:element name="datosContacto" type="T_datosC" />
+            <xs:element name="datosContactoA" type="T_datosCA" />
+            <xs:element name="forAcademica" type="T_forAcademica" />
+            <xs:element name="idiomas" type="T_idiomas" />
+            <xs:element name="expLaboral" type="T_expLaboral" />
+            <xs:element name="compSocPer" type="T_compSocPer" />
+            <xs:element name="datosAdicionales" type="T_datosAdic" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_datosP">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="apellidos" type="xs:string" />
+            <xs:element name="fechaNac" type="xs:date" />
+            <xs:element name="lugarNac" type="xs:string" />
+            <xs:element name="nacionalidades" type="xs:string" />
+            <xs:element name="nie" type="xs:string" />
+        </xs:sequence>
+
+    </xs:complexType>
+
+    <xs:complexType name="T_datosC">
+        <xs:sequence>
+            <xs:element name="tipoVia" type="xs:string" />
+            <xs:element name="nombreVia" type="xs:string" />
+            <xs:element name="numeroVia" type="xs:integer" />
+            <xs:element name="portal" type="xs:integer" />
+            <xs:element name="escalera" type="xs:integer" />
+            <xs:element name="piso" type="xs:integer" />
+            <xs:element name="puerta" type="xs:string" />
+            <xs:element name="cp" type="xs:integer" />
+            <xs:element name="pais" type="xs:string" />
+            <xs:element name="email" type="xs:string" />
+            <xs:element name="telfMovil" type="xs:integer" />
+            <xs:element name="telfFijo" type="xs:integer" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_datosCA">
+        <xs:sequence>
+            <xs:element name="pagWeb" type="xs:string" />
+            <xs:element name="redesSociales" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_forAcademica">
+        <xs:sequence>
+            <xs:element name="nombreEstudio" type="xs:string" />
+            <xs:element name="lugarEstudio" type="xs:string" />
+            <xs:element name="fechaInicio" type="xs:date" />
+            <xs:element name="fechaFin" type="xs:date" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_idiomas">
+        <xs:sequence>
+            <xs:element name="nomIdioma" type="xs:string" />
+            <xs:element name="nivelOral" type="xs:string" />
+            <xs:element name="nivelOral" type="xs:string" />
+            <xs:element name="nivelComprensionO" type="xs:string" />
+            <xs:element name="nivelEscrito" type="xs:string" />
+            <xs:element name="nivelComprensionE" type="xs:string" />
+            <xs:element name="titulo" type="xs:string" />
+            <xs:element name="nivelTituloo" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_expLaboral">
+        <xs:sequence>
+            <xs:element name="lugarExp" type="xs:string" />
+            <xs:element name="puesto" type="xs:string" />
+            <xs:element name="fechaInicio" type="xs:string" />
+            <xs:element name="fechaFin" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_compSocPer">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="nivel" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="T_datosAdic">
+        <xs:sequence>
+            <xs:element name="aficiones" type="xs:string" />
+            <xs:element name="disponViaje" type="xs:string" />
+            <xs:element name="vehiculo" type="xs:string" />
+            <xs:element name="permisoConducir" type="xs:string" />
+            <xs:element name="permisoConducir" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

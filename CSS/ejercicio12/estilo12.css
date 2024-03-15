@@ -1,0 +1,24 @@
+#cabecera{
+    text-align: center;
+    background-color: bisque;
+    height: 90px;
+}
+
+#izquierda{
+    width: 20%;
+    background-color: rgb(159, 143, 121);
+    float: left;
+}
+
+a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+#derecha{
+    width: 80%;
+    background-color: rgb(213, 171, 108);
+    float: right;
+    overflow: scroll;
+}

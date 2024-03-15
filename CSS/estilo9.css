@@ -1,0 +1,23 @@
+div.cabecera{
+    width: 100%;
+    height: 80px;
+    background-color: aquamarine;
+}
+
+div.columna1{
+    width: 70%;
+    height: 200px;
+    background-color: rgb(198, 141, 98);
+}
+
+div.columna2{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(181, 131, 228);
+}
+
+div.pie{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(125, 253, 174);
+}

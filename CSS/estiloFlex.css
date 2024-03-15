@@ -1,0 +1,39 @@
+.flex-container{
+    height: 500px;
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*align-items: center;*/
+    /*align-content: center;*/
+    background-color: aquamarine;
+}
+
+.flex-container > div {
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+    background: rgb(188, 152, 105);
+}
+
+.one{
+    height: 100px; 
+    /* width: 300px; 
+    align-self: center; 
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0; */
+}
+.two{
+    height: 150px; 
+    /*margin-left: auto;*/
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.three{
+    height: 100px; 
+    width: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}

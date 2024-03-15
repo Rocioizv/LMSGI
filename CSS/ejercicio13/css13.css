@@ -1,0 +1,28 @@
+img {
+    float: left;
+}
+a{
+    text-align: center;
+    text-emphasis: none;
+}
+div.cabecera{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(186, 140, 84);
+    height: 90px;
+}
+
+div.menu{
+    text-align: center;
+    width: 100%;
+    background-color: beige;
+    height: 70px;
+}
+#cuerpo{
+    overflow: scroll;
+    height: 200px;
+}
+div.piePag{
+    background-color: rgb(199, 158, 104);
+    height: 60px;
+}

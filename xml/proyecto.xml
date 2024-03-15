@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<curriculum id="876" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="proyecto.xsd">
+  <datosPersonales>
+    <nombre>Rocio</nombre>
+    <apellidos>Contarino Cannobbio</apellidos>
+    <fechaNac>12-06-2005</fechaNac>
+    <lugarNac>España</lugarNac>
+    <nacionalidades>española, argentina</nacionalidades>
+    <nie>123456679Y</nie>
+
+  </datosPersonales>
+
+  <datosContacto>
+    <tipoVia>tipoVia</tipoVia>
+    <nombreVia>nombre</nombreVia>
+    <numeroVia>56</numeroVia>
+    <portal>2</portal>
+    <escalera>3</escalera>
+    <piso>2</piso>
+    <puerta>A</puerta>
+    <cp>18290</cp>
+    <pais>España</pais>
+    <email></email>
+    <telfMovil>123456789</telfMovil>
+    <telfFijo>123456789</telfFijo>
+  </datosContacto>
+
+  <datosContactoA>
+    <pagWeb></pagWeb>
+    <redesSociales></redesSociales>
+  </datosContactoA>
+
+  <forAcademica>
+    <nombreEstudio></nombreEstudio>
+    <lugarEstudio></lugarEstudio>
+    <fechaInicio></fechaInicio>
+    <fechaFin></fechaFin>
+  </forAcademica>
+
+  <idiomas>
+    <nomIdioma></nomIdioma>
+    <nivelOral></nivelOral>
+    <nivelComprensionO></nivelComprensionO>
+    <nivelEscrito></nivelEscrito>
+    <nivelComprensionE></nivelComprensionE>
+    <titulo></titulo>
+    <nivelTitulo></nivelTitulo>
+  </idiomas>
+
+  <expLaboral>
+    <lugarExp></lugarExp>
+    <pusto></pusto>
+    <fechaInicio></fechaInicio>
+    <fechaFin></fechaFin>
+  </expLaboral>
+
+  <compSocPer>
+    <nombre></nombre>
+    <nivel></nivel>
+  </compSocPer>
+
+  <datosAdicionales>
+    <aficiones></aficiones>
+    <disponViaje></disponViaje>
+    <vehiculo></vehiculo>
+    <permisoConducir></permisoConducir>
+  </datosAdicionales>
+
+</curriculum>

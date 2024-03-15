@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+    <style>
+        @import url(estilo16.css);
+    </style>
+</head>
+
+<body>
+    <div id="cabIzq">
+        <h1 style="text-align: center;">TIENDA INFORMÁTICA</h1>
+        <h4>Rellene el formulario para poder realizar su pedido</h4>
+    </div>
+
+    <div id="cabDer">
+        <p>Si ya es cliente, introduzca su nombre de usuario y contraseña</p>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario">
+        <label for="clave">Constraseña</label>
+        <input type="password" id="clave" name="clave">
+    </div>
+
+    <div id="cuerpoIzq">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+            <label for="apellido">Apellidos</label>
+            <input type="text" id="apellido" name="apellido">
+            <br><br>
+            <label for="domicilio">Domicilio</label>
+            <input type="text" id="domicilio" name="domicilio">
+            <br><br>
+            <label for="cp">Código Postal</label>
+            <input type="text" id="cp" name="cp">
+            <br><br>
+            <label for="telf">Teléfono</label>
+            <input type="text" id="telf" name="telf">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Elija el método de entrega</legend>
+            <input type="radio" id="domic" name="entrega" value="domic">
+            <label for="domic">Entrega a domicilio</label>
+            <input type="radio" id="tienda" name="entrega" value="tienda">
+            <label for="tienda">Recoger pedido en tienda</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Rellene las siguientes opciones</legend>
+            <br>
+            <input type="checkbox" id="terminos" name="terminos" value="terminos">
+            <label for="terminos">Acepto terminos y condiciones</label>
+            <br><br>
+            <input type="checkbox" id="publicidad" name="publicidad" value="publicidad">
+            <label for="publicidad">Quieres que te enviemos nuestras ofertas</label>
+            <br><br>
+            <input type="checkbox" id="datos" name="datos" value="datos">
+            <label for="datos">Quiere guardar sus datos para futuras compras</label>
+            <br>
+        </fieldset>
+        <br><br>
+    </div>
+
+    <div id="cuerpoDer">
+        <fieldset>
+            <legend>Realice su pedido</legend>
+
+            <br>
+            
+            <label for="compra">Elija su pedido</label>
+            <select name="compra" id="compra">
+                <option value="torre">Ordenador de torre</option>
+                <option value="sobremesa">Ordenador de sobremesa</option>
+                <option value="tablet">Tablet</option>
+                <option value="movil">Móvil</option>
+                <option value="television">Televisión</option>
+                <option value="reloj">Smartwatch</option>
+            </select>
+
+            <br><br>
+
+            <label for="complemento">Elija los complementos para su pedido</label>
+            <select name="complemento" id="complemento">
+                <option value="mouse">Mouse</option>
+                <option value="teclado">Teclado</option>
+                <option value="monitor">Monitor</option>
+                <option value="cargador">Cargador</option>
+                <option value="hdmi">Cable HDMI</option>
+            </select>
+            <br><br>
+        </fieldset>
+    </div>
+
+    <div id="footer">
+        <p></p>
+        <input type="submit" value="Submit">
+
+        <br>
+
+        <p>Haga click para volver a empezar  a rellenar el formulario </p>
+        <input type="submit" value="Volver a empezar">
+    </div>
+
+</body>
+
+</html>
