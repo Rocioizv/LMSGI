@@ -23,10 +23,17 @@
             <xs:element name="fechaNac" type="xs:date" />
             <xs:element name="lugarNac" type="xs:string" />
             <xs:element name="nacionalidades" type="xs:string" />
-            <xs:element name="nie" type="xs:string" />
+            <xs:element name="nie" type="T_nie" />
         </xs:sequence>
 
     </xs:complexType>
+
+    <xs:simpleType name="T_nie">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[XYZ]\d{7}[A-Z]" />
+        </xs:restriction>
+    </xs:simpleType>
+
 
     <xs:complexType name="T_datosC">
         <xs:sequence>
@@ -37,13 +44,32 @@
             <xs:element name="escalera" type="xs:integer" />
             <xs:element name="piso" type="xs:integer" />
             <xs:element name="puerta" type="xs:string" />
-            <xs:element name="cp" type="xs:integer" />
+            <xs:element name="cp" type="T_cp" />
             <xs:element name="pais" type="xs:string" />
-            <xs:element name="email" type="xs:string" />
-            <xs:element name="telfMovil" type="xs:integer" />
-            <xs:element name="telfFijo" type="xs:integer" />
+            <xs:element name="email" type="T_email" />
+            <xs:element name="telfMovil" type="T_numTelefono" />
+            <xs:element name="telfFijo" type="T_numTelefono" />
         </xs:sequence>
     </xs:complexType>
+
+    <xs:simpleType name="T_cp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{5}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="T_email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="T_numTelefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{9}" />
+        </xs:restriction>
+    </xs:simpleType>
+
 
     <xs:complexType name="T_datosCA">
         <xs:sequence>
@@ -64,15 +90,33 @@
     <xs:complexType name="T_idiomas">
         <xs:sequence>
             <xs:element name="nomIdioma" type="xs:string" />
-            <xs:element name="nivelOral" type="xs:string" />
-            <xs:element name="nivelOral" type="xs:string" />
-            <xs:element name="nivelComprensionO" type="xs:string" />
-            <xs:element name="nivelEscrito" type="xs:string" />
-            <xs:element name="nivelComprensionE" type="xs:string" />
+            <xs:element name="nivelOral" type="T_nivelIdioma" />
+            <xs:element name="nivelComprensionO" type="T_nivelIdioma" />
+            <xs:element name="nivelEscrito" type="T_nivelIdioma" />
+            <xs:element name="nivelComprensionE" type="T_nivelIdioma" />
             <xs:element name="titulo" type="xs:string" />
-            <xs:element name="nivelTituloo" type="xs:string" />
+            <xs:element name="nivelTitulo" type="T_nivelTitulo" />
         </xs:sequence>
     </xs:complexType>
+
+    <xs:simpleType name="T_nivelIdioma">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Bajo"/>
+            <xs:enumeration value="Medio"/>
+            <xs:enumeration value="Alto"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="T_nivelTitulo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A1"/>
+            <xs:enumeration value="A2"/>
+            <xs:enumeration value="B1"/>
+            <xs:enumeration value="B2"/>
+            <xs:enumeration value="C1"/>
+            <xs:enumeration value="C2"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:complexType name="T_expLaboral">
         <xs:sequence>
@@ -86,18 +130,41 @@
     <xs:complexType name="T_compSocPer">
         <xs:sequence>
             <xs:element name="nombre" type="xs:string" />
-            <xs:element name="nivel" type="xs:string" />
+            <xs:element name="nivel" type="T_nivelSocPer" />
         </xs:sequence>
     </xs:complexType>
+
+    <xs:simpleType name="T_nivelSocPer">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:complexType name="T_datosAdic">
         <xs:sequence>
             <xs:element name="aficiones" type="xs:string" />
             <xs:element name="disponViaje" type="xs:string" />
             <xs:element name="vehiculo" type="xs:string" />
-            <xs:element name="permisoConducir" type="xs:string" />
-            <xs:element name="permisoConducir" type="xs:string" />
+            <xs:element name="permisoConducir" type="T_licenciaCond" />
         </xs:sequence>
     </xs:complexType>
+
+    <xs:simpleType name="T_licenciaCond">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="AM"/>
+        <xs:enumeration value="A1"/>
+        <xs:enumeration value="A2"/>
+        <xs:enumeration value="A"/>
+        <xs:enumeration value="B"/>
+        <xs:enumeration value="B+E"/>
+        <xs:enumeration value="C1"/>
+        <xs:enumeration value="C"/>
+        <xs:enumeration value="D1"/>
+        <xs:enumeration value="D1+E"/>
+        <xs:enumeration value="D"/>
+        <xs:enumeration value="BTP"/>
+    </xs:restriction>
+</xs:simpleType>
 
 </xs:schema>

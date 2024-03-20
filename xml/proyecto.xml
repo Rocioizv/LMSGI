@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<curriculum id="876" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<curriculum  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="proyecto.xsd">
+
+  
   <datosPersonales>
     <nombre>Rocio</nombre>
     <apellidos>Contarino Cannobbio</apellidos>
-    <fechaNac>12-06-2005</fechaNac>
+    <fechaNac>2005-06-15</fechaNac>
     <lugarNac>España</lugarNac>
     <nacionalidades>española, argentina</nacionalidades>
-    <nie>123456679Y</nie>
+    <nie>X1234567T</nie>
 
   </datosPersonales>
 
@@ -21,7 +23,7 @@
     <puerta>A</puerta>
     <cp>18290</cp>
     <pais>España</pais>
-    <email></email>
+    <email>nombre@gmail.com</email>
     <telfMovil>123456789</telfMovil>
     <telfFijo>123456789</telfFijo>
   </datosContacto>
@@ -34,37 +36,37 @@
   <forAcademica>
     <nombreEstudio></nombreEstudio>
     <lugarEstudio></lugarEstudio>
-    <fechaInicio></fechaInicio>
-    <fechaFin></fechaFin>
+    <fechaInicio>2000-01-01</fechaInicio>
+    <fechaFin>2000-10-01</fechaFin>
   </forAcademica>
 
   <idiomas>
     <nomIdioma></nomIdioma>
-    <nivelOral></nivelOral>
-    <nivelComprensionO></nivelComprensionO>
-    <nivelEscrito></nivelEscrito>
-    <nivelComprensionE></nivelComprensionE>
+    <nivelOral>Medio</nivelOral>
+    <nivelComprensionO>Medio</nivelComprensionO>
+    <nivelEscrito>Alto</nivelEscrito>
+    <nivelComprensionE>Alto</nivelComprensionE>
     <titulo></titulo>
-    <nivelTitulo></nivelTitulo>
+    <nivelTitulo>B2</nivelTitulo>
   </idiomas>
 
   <expLaboral>
     <lugarExp></lugarExp>
-    <pusto></pusto>
+    <puesto></puesto>
     <fechaInicio></fechaInicio>
     <fechaFin></fechaFin>
   </expLaboral>
 
   <compSocPer>
     <nombre></nombre>
-    <nivel></nivel>
+    <nivel>4</nivel>
   </compSocPer>
 
   <datosAdicionales>
     <aficiones></aficiones>
     <disponViaje></disponViaje>
     <vehiculo></vehiculo>
-    <permisoConducir></permisoConducir>
+    <permisoConducir>B</permisoConducir>
   </datosAdicionales>
 
 </curriculum>
