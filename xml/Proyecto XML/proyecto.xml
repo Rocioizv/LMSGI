@@ -8,7 +8,7 @@
     <apellidos>Contarino Cannobbio</apellidos>
     <fechaNac>2005-06-15</fechaNac>
     <lugarNac>España</lugarNac>
-    <nacionalidades>española, argentina</nacionalidades>
+    <nacionalidades>española</nacionalidades>
     <nie>X1234567T</nie>
 
   </datosPersonales>
@@ -16,7 +16,7 @@
   <datosContacto>
     <tipoVia>tipoVia</tipoVia>
     <nombreVia>nombre</nombreVia>
-    <numeroVia>56</numeroVia>
+    <numeroVia>5</numeroVia>
     <portal>2</portal>
     <escalera>3</escalera>
     <piso>2</piso>
@@ -29,19 +29,19 @@
   </datosContacto>
 
   <datosContactoA>
-    <pagWeb></pagWeb>
-    <redesSociales></redesSociales>
+    <pagWeb>librosycafe.com</pagWeb>
+    <redesSociales>aa</redesSociales>
   </datosContactoA>
 
   <forAcademica>
-    <nombreEstudio></nombreEstudio>
-    <lugarEstudio></lugarEstudio>
+    <nombreEstudio>DAW</nombreEstudio>
+    <lugarEstudio>ies zaidin vergeles</lugarEstudio>
     <fechaInicio>2000-01-01</fechaInicio>
     <fechaFin>2000-10-01</fechaFin>
   </forAcademica>
 
   <idiomas>
-    <nomIdioma></nomIdioma>
+    <nomIdioma>Inglés</nomIdioma>
     <nivelOral>Medio</nivelOral>
     <nivelComprensionO>Medio</nivelComprensionO>
     <nivelEscrito>Alto</nivelEscrito>
@@ -51,15 +51,17 @@
   </idiomas>
 
   <expLaboral>
-    <lugarExp></lugarExp>
-    <puesto></puesto>
+    <lugarExp>ee</lugarExp>
+    <puesto>ee</puesto>
     <fechaInicio></fechaInicio>
     <fechaFin></fechaFin>
   </expLaboral>
 
   <compSocPer>
-    <nombre></nombre>
+    <competencia>
+    <nombre>trabajo en equipo</nombre>
     <nivel>4</nivel>
+    </competencia>
   </compSocPer>
 
   <datosAdicionales>
